@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
       .select("price title img");
 
     res.render("courses", {
-      title: "Курсы",
+      title: "Courses",
       isCourses: true,
       userId: req.user ? req.user._id.toString() : null,
       courses,
